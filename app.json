@@ -1,17 +1,24 @@
 {
   "expo": {
-    "name": "shoetrack-mobile",
+    "name": "ShoeTrack",
     "slug": "shoetrack-mobile",
     "version": "1.0.0",
+    "description": "Application mobile de gestion de stock et ventes pour une petite boutique de chaussures.",
+    "scheme": "shoetrack",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.jengosolutions.shoetrack",
+      "buildNumber": "1"
     },
     "android": {
+      "package": "com.jengosolutions.shoetrack",
+      "versionCode": 1,
+      "permissions": [],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#1D2433",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +27,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-sqlite"
+    ]
   }
 }
